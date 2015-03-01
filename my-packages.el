@@ -5,8 +5,10 @@
 
 (defvar required-packages
   '(
-    geiser paredit rainbow-delimiters
-	  )
+    geiser 
+    paredit
+    rainbow-delimiters
+    )
   "a list of packages to ensure are installed at launch.")
 
 (require 'cl)

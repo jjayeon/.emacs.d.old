@@ -28,7 +28,3 @@
 (add-hook 'lisp-mode-hook             'rainbow-delimiters-mode)
 (add-hook 'lisp-interaction-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'scheme-mode-hook           'rainbow-delimiters-mode)
-
-
-;; QUACK
-;; (require 'quack)
