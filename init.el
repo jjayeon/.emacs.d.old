@@ -3,8 +3,8 @@
 ;; (global-set-key (kbd "<up>") 'previous-line)
 ;; (global-set-key (kbd "<down>") 'next-line)
 
-(load "~/.emacs.d/my-noexternals.el")
-(load "~/.emacs.d/my-loadpackages.el")
+(load "~/.emacs.d/no-externals.el")
+(load "~/.emacs.d/load-packages.el")
 
 (global-unset-key (kbd "C-c C-c"))
 (global-set-key (kbd "C-c C-c") 'comment-region)
