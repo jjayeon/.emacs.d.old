@@ -79,3 +79,5 @@
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
