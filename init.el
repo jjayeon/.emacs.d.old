@@ -1,9 +1,12 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
 
-(eval-when-compile
-  (require 'use-package))
+(package-initialize)
+(unless (package-installed-p 'use-package)
+  ;; only fetch the archives if you don't have use-package installed
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
 
 (use-package paredit
   :ensure t
