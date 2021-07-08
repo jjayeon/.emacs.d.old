@@ -47,9 +47,9 @@
 			   )))
 
 (use-package python-black
-  :demand t
-  :after python
-  :hook (python-mode . python-black-on-save-mode-enable-dwim))
+  :ensure t
+  :init
+  (add-hook 'python-mode-hook 'python-black-on-save-mode-enable-dwim))
 
 (use-package csharp-mode
   :ensure t
@@ -60,6 +60,11 @@
   :ensure t
   :init
   (add-hook 'prog-mode-hook #'global-flycheck-mode))
+
+(use-package yaml-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.ya?ml$ . yaml-mode")))
 
 (use-package markdown-mode
   :ensure t
@@ -77,7 +82,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (csharp-mode use-package prettier flycheck js2-mode))))
+    (python-black csharp-mode use-package prettier flycheck js2-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
