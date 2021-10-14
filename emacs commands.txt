@@ -1,0 +1,82 @@
+autumn's list of emacs commands
+
+1. the easy stuff
+fake arrow keys: C-p C-n C-b C-f
+backspace and delete: Bkspc, C-d
+Undo: C-_
+Save: C-x C-s
+Load: C-x C-f
+
+2. advanced navigation
+beginning and end of line: C-a C-e
+
+Begining and end of sentence: M-a M-e
+
+This is my rifle.  There are many like it, but this one is mine.
+
+Word skips: M-b M-f
+
+S-expression skips: C-M-b C-M-f
+
+(lisp is (the best) language) sadfasdf asdfasdf
+
+Beginning and end of file: M-< M->
+
+Scroll window: C-v
+
+Line-align: C-l
+
+def main():
+for x in y:
+asdfasdna
+asdfadfp
+
+Goto line: M-g g
+
+3. advanced editing
+mark: like a second cursor -- specify an area
+
+C-space or C-@
+
+Kill region: C-w
+Yank kill ring: C-y
+Yank other item: M-y
+
+Kill line: C-k
+Kill word backwards: C-backspace M-backspace
+Kill multiple lines: C-u N C-k
+
+Transpose characters: C-t
+Transpose words: M-t
+
+str.split(delimiter, stringname)
+
+Tab is nice
+Delete whitespace: M-\
+Delete whitespace except one space: M-space
+whoops too much space 
+
+Upcase-Region, Downcase-Region, Capitalize-Word: C-x C-u, C-x C-l, M-c 
+
+4. Windows and buffers
+Find file: C-x C-f
+Switch buffer: C-x b
+Show all buffers: C-x C-b
+Split window: C-x 2 C-x 3
+switch window: C-x o
+Close window: C-x 0
+Close all but this window: C-x 1
+
+5. The truly advanced stuff:
+Search: C-s, C-r
+Query replace: M-%
+Query replace regex
+Prefix commands: C-u
+Comment-region
+Macros!
+
+6. for more info:
+https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html
+https://vimhelp.org/
+https://code.visualstudio.com/docs
+
