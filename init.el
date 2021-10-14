@@ -55,6 +55,11 @@
   :ensure t
   :init
   (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode)))
+
+(use-package go-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.go$" . go-mode)))
   
 (use-package flycheck
   :ensure t
@@ -92,5 +97,7 @@
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(setq-default tab-width 4)
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
