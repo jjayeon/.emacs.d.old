@@ -99,5 +99,6 @@
 (put 'downcase-region 'disabled nil)
 (setq-default tab-width 4)
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
